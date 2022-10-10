@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="navbar bg-base-100">
+  <div className="flex-1">
+    <a href='#' className= "btn btn-ghost normal-case text-xl">Coder's Quiz</a>
+  </div>
+  <div className="flex-none gap-2">
+    <div className="flex justify-evenly">
+      <a href="#" className='mr-3'>Home</a>
+      <a href="#" className='mr-3'>Quiz</a>
+      <a href="#" className='mr-3'>Details</a>
+      <a href="#" className='mr-3'>About</a>
+    </div>
+    <div className="dropdown dropdown-end lg:hidden">
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img src="https://placeimg.com/80/80/people" alt='' />
+        </div>
+      </label>
+      <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+        <li className='mx-auto'><a>Home</a></li>
+        <li className='mx-auto'><a>Quiz</a></li>
+        <li className='mx-auto'><a>Details</a></li>
+        <li className='mx-auto'><a>About</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
     </div>
   );
 }

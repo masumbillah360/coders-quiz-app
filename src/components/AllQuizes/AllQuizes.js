@@ -5,7 +5,6 @@ import Quiestion from '../Quiestion/Quiestion';
 
 const AllQuizes = () => {
     const allQuiz = useLoaderData()
-    console.log(allQuiz.data);
     return (
         <div>
             <p>Give Your Best Hard Work and Win The Most Bright Future.. </p>

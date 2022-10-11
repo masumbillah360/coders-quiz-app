@@ -20,12 +20,12 @@ const Quiestion = ({ questions }) => {
 	return (
 		<div className="border my-2 p-2">
 			<div className="flex justify-between">
-				<label htmlFor="{question}">Q: {plainQuestion}</label>
+				<label className="font-bold py-1 mb-1" htmlFor="{question}">Q: {plainQuestion}</label>
 				<button
 					onClick={() => {
 						showAnser(correctAnswer);
 					}}
-					className="px-1 border rounded-full"
+					className="px-1 h-5 border rounded-full"
 				>
 					<FaEye></FaEye>
 				</button>

@@ -1,30 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
             <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a href='#' className= "btn btn-ghost normal-case text-xl">Coder's Quiz</a>
+    <Link to='/' className= "btn btn-ghost normal-case text-xl">Coder's Quiz</Link>
   </div>
   <div className="flex-none gap-2">
-    <div className="flex justify-evenly">
-      <a href="#" className='mr-3'>Home</a>
-      <a href="#" className='mr-3'>Quiz</a>
-      <a href="#" className='mr-3'>Details</a>
-      <a href="#" className='mr-3'>About</a>
+    <div tabIndex={0} className="flex justify-evenly lg:block hidden">
+      <Link to='/' className='mr-3'>Home</Link>
+      <Link to='/quiz' className='mr-3'>Quiz</Link>
+      <Link to='/blog' className='mr-3'>Blog</Link>
+      <Link to='/about' className='mr-3'>About</Link>
     </div>
     <div className="dropdown dropdown-end lg:hidden">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img src="https://placeimg.com/80/80/people" alt='' />
+        <div className="rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
         </div>
       </label>
       <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-        <li className='mx-auto'><a>Home</a></li>
-        <li className='mx-auto'><a>Quiz</a></li>
-        <li className='mx-auto'><a>Details</a></li>
-        <li className='mx-auto'><a>About</a></li>
+        <li className='mx-auto'><Link to='/'>Home</Link></li>
+        <li className='mx-auto'><Link to='/quiz'>Quiz</Link></li>
+        <li className='mx-auto'><Link to='/blog'>Blog</Link></li>
+        <li className='mx-auto'><Link to='/about'>About</Link></li>
       </ul>
     </div>
   </div>

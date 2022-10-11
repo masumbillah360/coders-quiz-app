@@ -2,18 +2,18 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='grid grid-cols-1 gap-3'>
-            <div className='bg-amber-100 p-2 rounded'>
-                <h1 className='text-2xl font-semibold'>React Router</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iste aut atque recusandae sapiente et consequuntur officia dignissimos a laudantium consectetur rem ea esse deserunt fuga, ad ut unde! Perferendis corporis doloribus labore voluptatum sunt recusandae magnam omnis vero explicabo perspiciatis, quia iusto autem nihil pariatur fuga nobis impedit repellendus reiciendis velit dicta quod incidunt tempore? Excepturi tenetur pariatur quasi.</p>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+            <div className='bg-slate-100 p-3 rounded'>
+                <h1 className='text-2xl font-semibold'>Q: How Does React Router Works ?</h1>
+                <p>React Router is a lightweight, fully-featured routing library for the React JavaScript library. React Router runs everywhere that React runs; on the web, on the server (using node.js), and on React Native. <br />React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. <br />Two such approaches are static and dynamic routing. Frameworks like Angular, Ember and React Router library (in the past) supported static routing. But recently, React Router introduced dynamic routing to address some of the core limitations with static routing.</p>
             </div>
-            <div className='bg-amber-100 p-2 rounded'>
+            <div className='bg-slate-100 p-3 rounded'>
                 <h1 className='text-2xl font-semibold'>Context Api</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quasi, vero nam non molestias cum quod illo. Enim doloribus cum sint assumenda fugit sit laboriosam, sapiente recusandae omnis possimus eaque sed? Earum error quo laborum mollitia numquam vitae perspiciatis voluptates id, minima, reprehenderit aut eveniet quae adipisci nam. Ratione libero cupiditate voluptatibus quae recusandae id officiis vitae quisquam natus est laborum iste in, dignissimos, necessitatibus harum voluptatem voluptatum perspiciatis minima!</p>
+                <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux. <br />React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.</p>
             </div>
-            <div className='bg-amber-100 p-2 rounded'>
+            <div className='bg-slate-100 p-3 rounded'>
                 <h1 className='text-2xl font-semibold'>useRef</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sunt totam recusandae quaerat autem deleniti nobis odit molestiae, pariatur ex, aperiam ratione ipsum velit. Ea, animi? Esse porro minus molestias voluptas odit, optio libero a fugiat nihil, nesciunt aperiam numquam quisquam, consequatur consectetur? Optio aut eius quos, autem ea quaerat labore! Laboriosam tempore officia dignissimos facilis perspiciatis mollitia amet voluptas nostrum sint tenetur. Architecto ipsam aliquid magni in molestias doloribus similique dolorem neque accusamus! Reprehenderit eos, iste ea fugiat et blanditiis animi, corporis dolore alias atque nostrum molestiae laudantium unde!</p>
+                <p>useRef returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its .current property. <br />The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>
             </div>
         </div>
     );

@@ -12,8 +12,8 @@ const Navbar = () => {
     <div tabIndex={0} className="flex justify-evenly lg:block hidden">
       <Link to='/' className='mr-3'>Home</Link>
       <Link to='/quiz' className='mr-3'>Quiz</Link>
+      <Link to='/statics' className='mr-3'>Statics</Link>
       <Link to='/blog' className='mr-3'>Blog</Link>
-      <Link to='/about' className='mr-3'>About</Link>
     </div>
     <div className="dropdown dropdown-end lg:hidden">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -24,8 +24,8 @@ const Navbar = () => {
       <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
         <li className='mx-auto'><Link to='/'>Home</Link></li>
         <li className='mx-auto'><Link to='/quiz'>Quiz</Link></li>
+        <li className='mx-auto'><Link to='/statics'>Statics</Link></li>
         <li className='mx-auto'><Link to='/blog'>Blog</Link></li>
-        <li className='mx-auto'><Link to='/about'>About</Link></li>
       </ul>
     </div>
   </div>

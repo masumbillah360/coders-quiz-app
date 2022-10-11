@@ -1,6 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaEye } from "react-icons/fa";
 
 const Quiestion = ({ questions }) => {
 	const { options, question, correctAnswer } = questions;
@@ -20,15 +21,14 @@ const Quiestion = ({ questions }) => {
 		<div className="border my-2 p-2">
 			<div className="flex justify-between">
 				<label htmlFor="{question}">Q: {plainQuestion}</label>
-				<label
+				<button
 					onClick={() => {
 						showAnser(correctAnswer);
 					}}
-					// htmlFor="my-modal"
-					className="btn btn-sm modal-button text-sm"
+					className="px-1 border rounded-full"
 				>
-					show answer
-				</label>
+					<FaEye></FaEye>
+				</button>
 			</div>
 			<ul className="grid md:grid-cols-2 gap-2">
 				{options.map((option, idx) => (

@@ -11,7 +11,6 @@ const Statics = () => {
                 <ResponsiveContainer height={300} width='100%'>
 					<BarChart width={900} height={300} data={data.data}>
 						<XAxis dataKey="name" stroke="#8884d8" />
-
 						<YAxis/>
 						<Tooltip
 							wrapperStyle={{

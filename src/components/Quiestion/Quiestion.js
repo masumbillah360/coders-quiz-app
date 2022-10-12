@@ -33,7 +33,7 @@ const Quiestion = ({ questions }) => {
 					}}
 					className="px-1 h-5 border rounded-full"
 				>
-					<FaEye></FaEye>
+					<FaEye className="text-blue-800"></FaEye>
 				</button>
 			</div>
 			<ul className="grid md:grid-cols-2 gap-2">

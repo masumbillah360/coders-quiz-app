@@ -10,10 +10,10 @@ const Navbar = () => {
   </div>
   <div className="flex-none gap-2">
     <div tabIndex={0} className="flex justify-evenly lg:block hidden">
-      <NavLink to='/home' className='mr-3 py-1 px-2'>Home</NavLink>
-      <NavLink to='/quiz' className='mr-3 py-1 px-2'>Quiz</NavLink>
-      <NavLink to='/statics' className='mr-3 py-1 px-2'>Statics</NavLink>
-      <NavLink to='/blog' className='mr-3 py-1 px-2'>Blog</NavLink>
+      <NavLink to='/home' className='mr-3 py-1 px-2 hover:bg-blue-300 rounded-md'>Home</NavLink>
+      <NavLink to='/quiz' className='mr-3 py-1 px-2 hover:bg-blue-300 rounded-md'>Quiz</NavLink>
+      <NavLink to='/statics' className='mr-3 py-1 px-2 hover:bg-blue-300 rounded-md'>Statics</NavLink>
+      <NavLink to='/blog' className='mr-3 py-1 px-2 hover:bg-blue-300 rounded-md'>Blog</NavLink>
     </div>
     <div className="dropdown dropdown-end lg:hidden">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

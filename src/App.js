@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import AllQuizes from "./components/AllQuizes/AllQuizes";
+import AllQuestion from "./components/AllQuestion/AllQuiestion";
 import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
@@ -31,7 +31,7 @@ function App() {
 						fetch(
 							`https://openapi.programming-hero.com/api/quiz/${params.quizeId}`
 						),
-					element: <AllQuizes></AllQuizes>,
+					element: <AllQuestion></AllQuestion>,
 				},
 
 				{ path: "/blog", element: <Blog></Blog> },

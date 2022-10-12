@@ -9,7 +9,7 @@ const Blog = () => {
             </div>
             <div className='bg-slate-100 p-3 rounded'>
                 <h1 className='text-2xl font-semibold'>Q: How does context api works ?</h1>
-                <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux. <br />React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.</p>
+                <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent. <br />At first you have to create a Context using createContext() hook and store/assign an variable. Then you can pass data every child component form parent component using context api. Child component get context data using by useContext(); hook. useContext() takes an Context that you created by createContext and store some variable. <br /> contextApi make data/variable global for every child compnents. It's more easier and remove complexity from react app like prop drilling.</p>
             </div>
             <div className='bg-slate-100 p-3 rounded'>
                 <h1 className='text-2xl font-semibold'>Q : What is useRef in reactJs ?</h1>

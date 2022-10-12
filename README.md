@@ -32,7 +32,7 @@ You may also see any lint errors in the console.
 ### you can show correct answer
 
 ## Some Instructions
-### This apps create for educational purpose. You can play quiz for testing your Programming skills. If you select Correct answer then apps notify to you that you are choosen correct answer and if you choose wrong answer this apps also notify to you that you are choosen wrong answer. Some times if you can't choose correct answer then you press to-right corner Eye icon to get correct answer.
+This apps create for educational purpose. You can play quiz for testing your Programming skills. If you select Correct answer then apps notify to you that you are choosen correct answer and if you choose wrong answer this apps also notify to you that you are choosen wrong answer. Some times if you can't choose correct answer then you press to-right corner Eye icon to get correct answer.
 
 
 ## Learn More

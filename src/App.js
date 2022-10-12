@@ -22,6 +22,10 @@ function App() {
 					element: <Home></Home>,
 				},
 				{
+					path: "/home",
+					element: <Home></Home>,
+				},
+				{
 					path: "/quiz/:quizeId",
 					loader: ({ params }) =>
 						fetch(

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -10,10 +10,10 @@ const Navbar = () => {
   </div>
   <div className="flex-none gap-2">
     <div tabIndex={0} className="flex justify-evenly lg:block hidden">
-      <Link to='/' className='mr-3'>Home</Link>
-      <Link to='/quiz' className='mr-3'>Quiz</Link>
-      <Link to='/statics' className='mr-3'>Statics</Link>
-      <Link to='/blog' className='mr-3'>Blog</Link>
+      <NavLink to='/home' className='mr-3 py-1 px-2'>Home</NavLink>
+      <NavLink to='/quiz' className='mr-3 py-1 px-2'>Quiz</NavLink>
+      <NavLink to='/statics' className='mr-3 py-1 px-2'>Statics</NavLink>
+      <NavLink to='/blog' className='mr-3 py-1 px-2'>Blog</NavLink>
     </div>
     <div className="dropdown dropdown-end lg:hidden">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -22,10 +22,10 @@ const Navbar = () => {
         </div>
       </label>
       <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-        <li className='mx-auto'><Link to='/'>Home</Link></li>
-        <li className='mx-auto'><Link to='/quiz'>Quiz</Link></li>
-        <li className='mx-auto'><Link to='/statics'>Statics</Link></li>
-        <li className='mx-auto'><Link to='/blog'>Blog</Link></li>
+        <li className='mx-auto'><NavLink to='/home'>Home</NavLink></li>
+        <li className='mx-auto'><NavLink to='/quiz'>Quiz</NavLink></li>
+        <li className='mx-auto'><NavLink to='/statics'>Statics</NavLink></li>
+        <li className='mx-auto'><NavLink to='/blog'>Blog</NavLink></li>
       </ul>
     </div>
   </div>

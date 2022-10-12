@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
@@ -20,7 +21,7 @@ const Quiz = ({ quiz }) => {
 				<button 
                 onClick={()=>quizeLoader(id)}
                 className="btn btn-sm btn-primary font-bold text-white">
-					Get Start
+					Get Start  <FaArrowRight></FaArrowRight>
 				</button>
 			</div>
 		</div>

@@ -20,6 +20,7 @@ function App() {
 				{
 					path: "/",
 					element: <Home></Home>,
+					errorElement: <ErrorPage></ErrorPage>,
 				},
 				{
 					path: "/home",

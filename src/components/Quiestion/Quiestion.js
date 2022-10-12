@@ -1,7 +1,7 @@
 import React from "react";
+import { FaEye } from "react-icons/fa";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaEye } from "react-icons/fa";
 
 const Quiestion = ({ questions }) => {
 	const { options, question, correctAnswer } = questions;
@@ -20,7 +20,9 @@ const Quiestion = ({ questions }) => {
 	return (
 		<div className="border my-2 p-2">
 			<div className="flex justify-between">
-				<label className="font-bold py-1 mb-1" htmlFor="{question}">Q: {plainQuestion}</label>
+				<label className="font-bold py-1 mb-1" htmlFor='qsn'>
+					Q: {plainQuestion}
+				</label>
 				<button
 					onClick={() => {
 						showAnser(correctAnswer);
@@ -32,15 +34,17 @@ const Quiestion = ({ questions }) => {
 			</div>
 			<ul className="grid md:grid-cols-2 gap-2">
 				{options.map((option, idx) => (
-					<li className="bg-blue-100 p-2 rounded" key={idx}>
-						<input
-							onClick={() => answerDetector(option)}
-							className="mr-3"
-							type="radio"
-							name={question}
-							id=""
-						/>
-						{option}
+					<li className="bg-slate-100 p-2 rounded hover:bg-green-100 form-control" key={idx}>
+							<label className="label cursor-pointer">
+								<span className="label-text">{option}</span>
+								<input
+									type="radio"
+									onClick={() => answerDetector(option)}
+									name='qsn'
+									className="radio checked:bg-blue-500"
+									checked
+								/>
+							</label>
 					</li>
 				))}
 			</ul>

@@ -23,7 +23,7 @@ const Quiestion = ({ questions }) => {
 	return (
 		<div className="border my-2 p-2">
 			<div className="flex justify-between">
-				<label className="font-bold py-1 mb-1" htmlFor="{question}">
+				<label className="font-bold py-1 mb-1" htmlFor={question}>
 					Q: {plainQuestion}
 				</label>
 				<button

@@ -1,43 +1,39 @@
-# Getting Started with Create React App
+# This is Simple React Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Live Site Link
+Open [https://web-coders-quiz.netlify.app](https://web-coders-quiz.netlify.app/) \ To view it on your browser
 
 In the project directory, you can run:
+## Run App by : npm start
+### `npm start`
 
-### `yarn start`
-
-Runs the app in the development mode.\
+Runs the app in the development mode before install npm paakages.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Main technology
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Full application made by reactJs
+### react-router-dom v-6
+### show active/current route on navbar 
+### use contextApi
+### Apps designed by Tailwind CSS & Daisy UI
+### react toastify
+### react-icons
+### recharts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Main Feature
+### you can play quiz some topics.
+### correct and wrong answer notifier.
+### you can show correct answer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Some Instructions
+### This apps create for educational purpose. You can play quiz for testing your Programming skills. If you select Correct answer then apps notify to you that you are choosen correct answer and if you choose wrong answer this apps also notify to you that you are choosen wrong answer. Some times if you can't choose correct answer then you press to-right corner Eye icon to get correct answer.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 

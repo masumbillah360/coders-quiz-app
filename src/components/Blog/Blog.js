@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
             <div className='bg-slate-100 p-3 rounded'>
-                <h1 className='text-2xl font-semibold'>Q: How does react-router works ?</h1>
+                <h1 className='text-2xl font-semibold'>Q: What is the purpose of react-router ? ?</h1>
                 <p>React Router is a lightweight, fully-featured routing library for the React JavaScript library. React Router runs everywhere that React runs; on the web, on the server (using node.js), and on React Native. <br />React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. <br />Two such approaches are static and dynamic routing. Frameworks like Angular, Ember and React Router library (in the past) supported static routing. But recently, React Router introduced dynamic routing to address some of the core limitations with static routing.</p>
             </div>
             <div className='bg-slate-100 p-3 rounded'>
